@@ -1,13 +1,12 @@
-package io.schultz.dustin.todoapp.converter;
+package br.com.chagas.todolist.converter;
 
-import io.schultz.dustin.todoapp.dto.TodoItemDto;
-import io.schultz.dustin.todoapp.dto.TodoListDto;
-import io.schultz.dustin.todoapp.model.TodoItem;
-import io.schultz.dustin.todoapp.model.TodoList;
+import br.com.chagas.todolist.dto.TodoItemDto;
+import br.com.chagas.todolist.dto.TodoListDto;
+import br.com.chagas.todolist.model.TodoItem;
+import br.com.chagas.todolist.model.TodoList;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,7 +15,6 @@ public class TodoListConverter implements Converter<TodoList, TodoListDto> {
 
     private TodoItemConverter itemConverter;
 
-    @Inject
     public TodoListConverter(TodoItemConverter itemConverter) {
         this.itemConverter = itemConverter;
     }

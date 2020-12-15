@@ -1,12 +1,11 @@
-package io.schultz.dustin.todoapp.controller;
+package br.com.chagas.todolist.controller;
 
-import io.schultz.dustin.todoapp.dto.TodoListDto;
-import io.schultz.dustin.todoapp.service.TodoService;
+import br.com.chagas.todolist.dto.TodoListDto;
+import br.com.chagas.todolist.service.TodoService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.inject.Inject;
 import java.util.List;
 
 @RestController
@@ -15,13 +14,12 @@ public class TodoController {
 
     private TodoService todoService;
 
-    @Inject
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
     }
 
-    @GetMapping("/lists")
-    public List<TodoListDto> getTodoLists() {
-        return todoService.getTodoLists();
+    @GetMapping("/fecth-list")
+    public List<TodoListDto> getTodoList() {
+        return todoService.getTodoList();
     }
 }

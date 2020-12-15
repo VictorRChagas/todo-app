@@ -1,4 +1,4 @@
-package io.schultz.dustin.todoapp;
+package br.com.chagas.todolist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

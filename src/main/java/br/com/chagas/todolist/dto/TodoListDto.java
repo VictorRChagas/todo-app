@@ -1,12 +1,11 @@
-package io.schultz.dustin.todoapp.dto;
+package br.com.chagas.todolist.dto;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TodoListDto {
 
-    private String name;
-    private List<TodoItemDto> items = new ArrayList<>();
+    private final String name;
+    private final List<TodoItemDto> items;
 
     public TodoListDto(String name, List<TodoItemDto> items) {
         this.name = name;

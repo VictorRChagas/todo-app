@@ -13,11 +13,3 @@ Build with the included Maven wrapper
 Run via command line
 
     ./mvnw spring-boot:run
-
-# Found a bug?
-
-Fork, improve and PR. ;-)
-
-# Questions / Comments
-
-Contact me at [http://dustin.schultz.io](http://dustin.schultz.io/)

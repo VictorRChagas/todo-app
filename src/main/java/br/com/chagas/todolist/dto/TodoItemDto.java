@@ -1,4 +1,4 @@
-package io.schultz.dustin.todoapp.dto;
+package br.com.chagas.todolist.dto;
 
 public class TodoItemDto {
 

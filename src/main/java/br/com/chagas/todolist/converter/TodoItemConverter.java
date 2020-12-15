@@ -1,7 +1,7 @@
-package io.schultz.dustin.todoapp.converter;
+package br.com.chagas.todolist.converter;
 
-import io.schultz.dustin.todoapp.dto.TodoItemDto;
-import io.schultz.dustin.todoapp.model.TodoItem;
+import br.com.chagas.todolist.dto.TodoItemDto;
+import br.com.chagas.todolist.model.TodoItem;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
